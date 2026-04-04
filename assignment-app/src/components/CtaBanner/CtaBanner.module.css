@@ -1,0 +1,74 @@
+.section {
+  padding: clamp(3rem, 7vw, 5rem) 0;
+  margin: 0 var(--space-4) clamp(3rem, 8vw, 5rem);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(
+    135deg,
+    #1a2240 0%,
+    var(--color-dark) 45%,
+    #12182e 100%
+  );
+  color: #fff;
+  box-shadow: var(--shadow-lg);
+}
+
+@media (min-width: 768px) {
+  .section {
+    margin-inline: max(var(--space-4), calc((100% - var(--max-width)) / 2 + var(--space-4)));
+  }
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  align-items: flex-start;
+  padding: var(--space-2) 0;
+}
+
+@media (min-width: 768px) {
+  .inner {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-10);
+  }
+}
+
+.copy {
+  max-width: 36rem;
+}
+
+.title {
+  margin: 0 0 var(--space-4);
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3.5vw, 2.35rem);
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.lead {
+  margin: 0;
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  flex-shrink: 0;
+}
+
+.ghostLight {
+  color: rgba(255, 255, 255, 0.85) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: transparent !important;
+}
+
+.ghostLight:hover {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #fff !important;
+}
