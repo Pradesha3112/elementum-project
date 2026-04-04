@@ -18,8 +18,4 @@ Open [http://localhost:8080](http://localhost:8080).
 cd assignment-app
 npm install
 npm run dev
-```
-
-## Note on the Figma file
-
-The linked Figma file is not readable without signing in. The layout, sections, and visual system are implemented as a full landing page (header, hero, logos, features, showcase, stats, testimonials, pricing, CTA, footer) with responsive breakpoints. After you open the file in Figma, you can align colors, type sizes, and copy by updating tokens in `assignment-app/src/styles/global.css` and section modules.
+```logos, features, showcase, stats, testimonials, pricing, CTA, footer) with responsive breakpoints. After you open the file in Figma, you can align colors, type sizes, and copy by updating tokens in `assignment-app/src/styles/global.css` and section modules.
